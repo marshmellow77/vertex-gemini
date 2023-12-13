@@ -1,0 +1,11 @@
+/.DS_Store
+/.idea
+/.streamlit
+/chatbot-vertexai.py
+/chatbot.py
+/chatbot2.py
+/chatbot3.py
+/gemini-test.py
+/gemini-vision-test.py
+/venv
+/vertexai-test.py
