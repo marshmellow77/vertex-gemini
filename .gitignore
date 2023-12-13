@@ -9,3 +9,5 @@
 /gemini-vision-test.py
 /venv
 /vertexai-test.py
+.env
+custom-gemini-llm-test.py
