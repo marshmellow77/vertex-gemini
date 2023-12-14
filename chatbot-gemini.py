@@ -33,8 +33,12 @@ class GeminiProLLM(LLM):
             prompt, 
             generation_config={"temperature": 0.1}
         )
-        text_content = model_response.candidates[0].content.parts[0].text
-        return text_content
+        print(model_response)
+
+        if len(model_response.candidates[0].content.parts) > 0:
+            return model_response.candidates[0].content.parts[0].text
+        else:
+            return "<No answer given by Gemini Pro>"
 
     @property
     def _identifying_params(self) -> Mapping[str, Any]:
